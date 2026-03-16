@@ -621,6 +621,7 @@ export function LocationSelector() {
           }
           onChange={(newValue) => {
             setSelectedCityId(newValue);
+            setIsCityDefault(false);
           }}
           isLoading={!!selectedState && isLoadingCities}
           loadingLabel="Loading cities…"
